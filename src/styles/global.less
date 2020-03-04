@@ -1,0 +1,50 @@
+@maincolor: #ff3a74;
+
+.border-bottom(@color){
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1PX solid @color;
+    transform: scaleY(0.5);
+  }
+}
+.border-top(@color){
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1PX solid @color;
+    transform: scaleY(0.5);
+  }
+}
+.border-left(@color){
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-left: 1PX solid @color;
+    transform: scaleX(0.5);
+  }
+}
+.border-right(@color){
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1PX solid @color;
+    transform: scaleX(0.5);
+  }
+}
